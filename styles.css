@@ -1,0 +1,246 @@
+body{
+    background: #f3f5fc;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: Inter,'Source Sans Pro';    
+    font-weight: 400;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    position: absolute;
+    height: 5%;
+    width: 8%;
+    top: 4%;
+    left: 4;
+    object-fit: contain;
+    vertical-align: top;
+}
+.encriptar{
+    position: absolute;
+    width: 47%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    top: 10%;
+    left: 18%;   
+    
+}
+.textoEntrante,.textoEntrante:focus,.textoEntrante::placeholder{
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    flex-direction: column;
+    resize: none;
+    outline: none;
+    border-style: none;
+    background: inherit;
+    color: #0a3871;
+    cursor: text;    
+    font-size: 32px;    
+    line-height: 48px;
+}
+.advertencia{
+    position: absolute;
+    top: 82%;
+    display: flex;
+    flex-shrink: 0;
+}
+.icon{
+    width: 16px;
+    margin-right: 8px;
+}
+.iconText{
+    color: #495057;
+    font-size: 12px;
+    line-height: 18px;
+}
+.botones{
+    position: absolute;
+    top: 86%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 67px;
+    gap: 3.5%;
+}
+.boton{
+    background-color: #0a3871;
+    border-style: none;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 17px;
+    height: 100%;
+    line-height: 19px;
+    text-align: center;
+    width: 48%;
+}
+.boton:last-of-type{
+    background-color: #edf1ed;
+    border: solid 1px #0a3871;
+    color: #0a3871;
+}
+.desencriptado{
+    align-items: center;
+    position: absolute;
+    top: 4%;
+    left: 69.5%;
+    background: #fff;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 27.7%;
+    height: 92%;       
+}
+.muñeco{
+    position: absolute;
+    object-fit: contain;
+    vertical-align: top;
+    top: 23.5%;
+    width: 84%;
+}
+.titulo{
+    color: #343a40;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-bottom: 16px;   
+    text-align: center;
+    flex-shrink: 0;
+    
+}
+.descripcion{
+    color: #495057;
+    font-size: 16px;
+    line-height: 24px;    
+    text-align: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    outline: none;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.cajap{
+    flex-direction: column;
+    flex-shrink: 0;
+    position: absolute;
+    top: 69.5%;
+    margin: 0 20px;
+    width: 84%;
+}
+.botonCopiar{
+    position: absolute;
+    top: 86%;
+    display: none;      
+    width: 90%;
+    height: 67px;    
+    background-color: inherit;
+    border-style: none;
+    border: solid 1px #0a3871;
+    border-radius: 24px;
+    color: #0a3871;
+    font-size: 17px;    
+    line-height: 19px;
+    text-align: center;
+    
+}
+.boton:hover,.botonCopiar:hover{
+    background-color: #052d5f;
+    transition: 0.5s;
+}
+@media(max-width:900px) and (min-width:600px){
+    .encriptar{
+        height: 70%;
+        width: 89.5%;
+        top: 14%;
+        left: 5%;
+    }
+    .textoEntrante{
+        height: 70%;
+    }
+    .advertencia{
+        top:82%;
+        font-size: 16px;
+    }
+    .botones{
+        top: 86%;
+    }
+    .desencriptado{
+        width: 89.5%;
+        height: auto;
+        top: 85.3%;
+        left: 5%;        
+        position: relative;
+    }
+    .muñeco{
+        display: none;
+        visibility: hidden;
+    }
+    .cajap{
+        padding: 10px;
+        position: relative;        
+    }
+    .botonCopiar {        
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 40px;
+    }
+
+}
+@media(max-width:600px){
+    .encriptar{
+        height: 50%;
+        width: 89.5%;
+        top: 12%;
+        left: 5%;
+    }
+    .textoEntrante,.textoEntrante::placeholder{
+        height: 35%;
+        font-size: 29px;
+    }
+    .advertencia{
+        top:83%;
+        font-size: 14px;
+    }
+    .botones{
+        top: 89%;
+        flex-direction: column;
+        height: 130px;
+        align-items: center;
+    }
+    .boton{
+        width: 100%;
+    }
+    .desencriptado{
+        width: 89.5%;
+        height: auto;
+        top: 78%;
+        left: 5%;    
+        position: relative;    
+    }
+    .muñeco{
+        display: none;
+        visibility: hidden;
+    }
+    .cajap{
+        padding: 10px;
+        position: relative;        
+    }
+    .botonCopiar {        
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 70px;
+    }
+}

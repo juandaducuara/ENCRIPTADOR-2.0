@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">         
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">   
+    <title>Encriptador</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="logo"><img src="imagenes/Logo.png" alt="Logo alura"></div>    
+    <section class="encriptar">
+        <textarea id="encriptar" cols="30" rows="10" placeholder="Ingrese texto aqui" class="textoEntrante"></textarea>
+        <div class="advertencia"><img src="imagenes/bi_exclamation-circle-fill.png" alt="" class="icon"><p class="textoIcon">Solo letras minúsculas y sin acentos</p></div>
+        <div class="botones">
+            <button id="botonEncriptar" class="boton">Encriptar</button>
+            <button id="botonDesncriptar" class="boton">Desencriptar</button>
+        </div>
+    </section>    
+    <section class="desencriptado">
+        <img src="imagenes/Muñeco.png" alt="" class="muñeco" id="muñecoID">
+        <div class="cajap" id="cajapID">
+            <p class="titulo" id="tituloID">Ningún mensaje fue encontrado</p>
+            <p class="descripcion" id="descripcionID">Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+        <button id="botonCopiar" class="botonCopiar">Copiar</button>
+    </section>    
+    <script src="app.js"></script>
+</body>
+</html>
